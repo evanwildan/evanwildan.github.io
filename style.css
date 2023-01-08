@@ -1,6 +1,5 @@
 a {
-    color:white;
-    text-decoration: none; 
+    all: unset; 
   }
     
 body{
