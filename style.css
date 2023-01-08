@@ -4,11 +4,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    
 }
 
-.center {
-    text-align: center
-   }
+.center { 
+    text-align: center; 
+}
 
 .topnav {
     overflow: hidden;
@@ -52,3 +53,6 @@ body{
     font-size: 17px;
   }
   
+ .center { 
+    text-align: center; 
+}
