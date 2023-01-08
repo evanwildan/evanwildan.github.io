@@ -31,20 +31,26 @@ body{
     color: white;
 }
 
-.botnav {
+#menu-outer {
     background-color: #333;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  
-.botnav a {
-    margin: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
     text-decoration: none;
-    font-size: 17px;
-  }
+}
+	
+ul#horizontal-list li {
+		display: inline;
+}
