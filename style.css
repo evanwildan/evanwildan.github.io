@@ -1,6 +1,7 @@
-head{
-    text-decoration:none;
-}
+a {
+    color:white;
+    text-decoration: none; 
+  }
     
 body{
     background-color:gray;
