@@ -6,6 +6,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+.center {
+    text-align: center
+   }
+
 .topnav {
     overflow: hidden;
     background-color: #333;
