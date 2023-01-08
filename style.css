@@ -6,22 +6,26 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-a:link {
-    color: inherit;
-    text-decoration: none;
+.topnav {
+    overflow: hidden;
+    background-color: #333;
   }
   
-a:visited {
-    color: inherit;
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
   }
   
-a:hover {
-    color: blue;
-    text-decoration: none;
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
   }
   
-a:active {
-    color: blue;
-    text-decoration: none;
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
   }
