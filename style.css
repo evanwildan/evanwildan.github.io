@@ -1,4 +1,8 @@
+head{
+    text-decoration:none;
+}
+    
 body{
-    background-color: gray;
+    background-color:gray;
     color: white;
 }
