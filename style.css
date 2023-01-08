@@ -2,3 +2,7 @@ body{
     background-color:gray;
     color: white;
 }
+
+a{
+    all: inherit;
+}
