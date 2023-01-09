@@ -54,3 +54,7 @@ ul#horizontal-list {
 ul#horizontal-list li {
 	display: inline;
 }
+
+ul#horizontal-list li img {
+	margin: 0px 8px 0px;
+}
