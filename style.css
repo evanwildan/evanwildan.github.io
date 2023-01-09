@@ -55,6 +55,13 @@ ul#horizontal-list li {
 	display: inline;
 }
 
+ul#horizontal-list li a:hover {
+    width:30px;
+    height:30px;
+	margin: 0px 8px 0px;
+}
 ul#horizontal-list li img {
+    width:30px;
+    height:30px;
 	margin: 0px 8px 0px;
 }
