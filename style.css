@@ -47,7 +47,7 @@ body{
 
 ul#horizontal-list {
 	list-style: none;
-	padding-top: 20px;
+	padding: 0px;
     text-decoration: none;
 }
 	
