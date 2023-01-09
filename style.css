@@ -18,6 +18,12 @@ body{
     border-collapse: collapse;
 }
 
+.table1 ul#horizontal-list1 li a[href*="index"] {
+	display: table;
+	float: left;
+    border-collapse: collapse;
+}
+
 ul#horizontal-list1 li {
 	display: inline;
 }
