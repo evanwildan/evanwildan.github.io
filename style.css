@@ -7,10 +7,15 @@ body{
     
 }
 
-.topnav {
-    overflow: hidden;
+#topnav-menu {
     background-color: #333;
-    float: right;
+    overflow: hidden;
+}
+
+.table1 {
+	display: table;
+	float: right;
+    border-collapse: collapse;
 }
 
 ul#horizontal-list1 li {
@@ -42,7 +47,7 @@ ul#horizontal-list1 li a:active {
     width: 100%;
 }
 
-.table {
+.table2 {
 	display: table;   /* Allow the centering to work */
 	margin: 0 auto;
     border-collapse: collapse;
