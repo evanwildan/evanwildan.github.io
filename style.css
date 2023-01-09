@@ -56,20 +56,10 @@ ul#horizontal-list li {
 }
 
 ul#horizontal-list li a {
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 ul#horizontal-list li img {
     width:30px;
     height:30px;
 	margin: 0px 8px 0px;
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 }
