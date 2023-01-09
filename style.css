@@ -42,15 +42,17 @@ body{
 .table {
 	display: table;   /* Allow the centering to work */
 	margin: 0 auto;
+    border-collapse: collapse;
 }
 
 ul#horizontal-list {
 	list-style: none;
 	padding-top: 20px;
+    padding: 0; 
+    margin: 0;
     text-decoration: none;
 }
 	
 ul#horizontal-list li {
-		display: inline;
+	display: inline;
 }
-
