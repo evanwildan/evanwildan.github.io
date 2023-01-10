@@ -17,17 +17,11 @@ body{
     border-collapse: collapse;
 }
 
-.nav-menu_table_horizontal-list a {
-	display: table;
-	float: left;
-    border-collapse: collapse;
-}
-
-ul#horizontal-list1 li {
+.nav-menu_table_horizontal-list li {
 	display: inline;
 }
 
-ul#horizontal-list1 li a {
+.nav-menu_table_horizontal-list li a {
     color: #f2f2f2;
 	padding: 14px 16px;
     text-decoration: none;
@@ -35,7 +29,7 @@ ul#horizontal-list1 li a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-ul#horizontal-list1 li a:active {
+.nav-menu_table_horizontal-list a:active {
     background-color: #333;
     color: rgb(255, 72, 0);
   }
