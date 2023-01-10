@@ -17,11 +17,11 @@ body{
     border-collapse: collapse;
 }
 
-ul#nav-menu_table_horizontal-list li {
+ul.nav-menu_table_horizontal-list li {
 	display: inline;
 }
 
-ul#nav-menu_table_horizontal-list li a {
+ul.nav-menu_table_horizontal-list li a {
     color: #f2f2f2;
 	padding: 14px 16px;
     text-decoration: none;
