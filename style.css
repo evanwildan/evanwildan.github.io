@@ -13,6 +13,7 @@ body{
 
 .nav-menu_table {
 	float: right;
+    border-collapse: collapse;
 }
 
 ul.nav-menu_table_horizontal-list li {
