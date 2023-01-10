@@ -11,12 +11,6 @@ body{
     overflow: hidden;
 }
 
-.nav-menu_table {
-	display: table;
-	float: right;
-    border-collapse: collapse;
-}
-
 .nav-menu_table_horizontal-list li {
 	display: inline;
 }
