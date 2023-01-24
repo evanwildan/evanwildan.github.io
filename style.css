@@ -106,19 +106,20 @@ ul.nav-menu_table_horizontal-list button {
     color: rgb(255, 72, 0);
   
   }
-  
-  ul.nav-menu_table_horizontal-list button {
-    background-color: gray;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 8px;
-    margin-right: 8px;
+
+
+  ul.nav-menu_table_horizontal-list .openbtn {
+    font-size: 20px;
     cursor: pointer;
-    
+    background-color: #111;
+    color: rgb(255, 72, 0);
+    padding: 4px 6px;
+    border: none;
+    transition: margin-left .5s;
+  }
+  
+  ul.nav-menu_table_horizontal-list .openbtn:hover {
+    background-color: #444;
   }
 
   .sidebar {
@@ -144,7 +145,7 @@ ul.nav-menu_table_horizontal-list button {
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: rgb(255, 72, 0);
   }
   
   .sidebar .closebtn {
@@ -155,23 +156,7 @@ ul.nav-menu_table_horizontal-list button {
     margin-left: 50px;
   }
   
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
   
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -179,6 +164,12 @@ ul.nav-menu_table_horizontal-list button {
     .sidebar a {font-size: 18px;}
   }
   
+  .sidebar li {
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 14px;
+  }
+
 .footer-menu {
     background-color: #333;
     overflow: hidden;
@@ -259,10 +250,6 @@ ul.nav-menu_table_horizontal-list a:active {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
-    ul.nav-menu_table_horizontal-list button {
-      display:none;
-    }
 
   }
 
