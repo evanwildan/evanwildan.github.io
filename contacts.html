@@ -13,16 +13,39 @@
   </head>
   <body>
     <div class="website">
-        <nav>
+        <nav class="">
           <div class="nav-menu">
+                    <a href="index.html">Home</a>
             <div class="nav-menu_table">
               <ul class="nav-menu_table_horizontal-list">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
+                <button class="butttooonnn"></button>
               </ul>
-            </div>
+              <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+              </div>
+              <script>
+                function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidebar").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+                </script>
+                   
           </div>
         </nav>
         <main>
@@ -30,15 +53,16 @@
             This is a sample text.
           </p>
         </main>
-        <footer id="menu-outer">
-            <div class="table2">
-              <ul id="horizontal-list2">
+        <footer class="footer-menu">
+            <div class="footer-menu_table">
+              <ul class="footer-menu_table_horizontal-list">
                 <li><a href="https://github.com/evanwildan" ><img src="images/GitHub.png" /></a></li>
                 <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><img src="images/Mail.png" /></a></li>
                 <li><a href="https://www.linkedin.com/in/evandro-wildan-521b951b5" ><img src="images/Linkedin.png" /></a></li>
               </ul>
             </div>
         </footer>
-    </header>
+      </div>
   </body>
 </html>
+
