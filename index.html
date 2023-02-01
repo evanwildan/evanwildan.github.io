@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -13,14 +13,14 @@
   </head>
   <body>
     <div class="website">
-        <nav class="">
-          <div class="nav-menu">
+        <nav class="nav-menu">
+          <div class="nav-menu_all-item">
                     <a href="index.html">Home</a>
             <div class="nav-menu_table">
               <ul class="nav-menu_table_horizontal-list">
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="about.html">About</a></li>
               <button class="openbtn" onclick="openNav()">☰</button>
                 
               </ul>
@@ -29,7 +29,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="about.html">About</a></li>
               </div>
               
               <script>
@@ -46,17 +46,31 @@
                    
           </div>
         </nav>
-        <main>
-          <p>
-            This is a sample text.
-          </p>
+        <main >
+          <section class="mb-24 prose-h1:my-16" style="opacity: 1; transform: none;">
+            <h1 class="underline leading-relaxed decoration-blue-500 dark:no-underline decoration-8 underline-offset-[10px] undefined"></h1>
+            <div class="flex items-center flex-col md:flex-row ">
+              <div class="rounded-full p-2 mr-8 flex items-center justify-center shadow-lg">
+                <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 250px; height: 250px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"><img alt="Tony David" srcset="/_next/image?url=%2Fhomephoto.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fhomephoto.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2Fhomephoto.webp&amp;w=640&amp;q=75" decoding="async" data-nimg="fixed" class="rounded-full" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span>
+              </div>
+                
+              <div class="prose-h1:mb-4 prose-h1:mt-2">
+                <p>Engineer</p>
+                <h1>Evandro Wildan Aqilah</h1>
+                <p class="xl:w-[40rem]">Evandro is an Electrical Engineering student who still studying at the Sepuluh Nopember Institute of Technology. He is interested in studying in the computer field, especially hardware. Being consistent in work and politeness are his main characteristics. he loves learning programming languages (Python, Javascript, etc). Right now, he is pursuing his career as a FrontEnd Engineer</p>
+                <button class="p-button p-component prose dark:prose-invert p-button-outlined p-button-info    dark:!text-white  border-2 dark:!bg-transparent hover:dark:!bg-black/60 hover:dark:!border-white hover:dark:!text-white">
+                  <span class="p-button-label p-c">Know me more!</span>
+                </button>
+              </div>
+            </div>
+          </section>
         </main>
         <footer class="footer-menu">
             <div class="footer-menu_table">
               <ul class="footer-menu_table_horizontal-list">
-                <li><a href="https://github.com/evanwildan" ><img src="images/GitHub.png" /></a></li>
-                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><img src="images/Mail.png" /></a></li>
-                <li><a href="https://www.linkedin.com/in/evandro-wildan-521b951b5" ><img src="images/Linkedin.png" /></a></li>
+                <li><a href="https://github.com/evanwildan" ><img src="images/GitHub.svg" /></a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><img src="images/Mail.svg" /></a></li>
+                <li><a href="https://www.linkedin.com/in/evandro-wildan-521b951b5" ><img src="images/Linkedin.svg" /></a></li>
               </ul>
             </div>
         </footer>
