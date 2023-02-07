@@ -22,8 +22,10 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
+              <button class="openbtn" onclick="darkMode()">
+                <i class="pi pi-sun"></i>
+              </button>
               <button class="openbtn" onclick="openNav()">☰</button>
-              <button class="openbtn" onclick="darkMode()">Darkmode</button>
               </ul>
 
               <div id="mySidebar" class="sidebar">
@@ -33,7 +35,7 @@
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
               </div>
-              
+
               <script>
                 function openNav() {
                   document.getElementById("mySidebar").style.width = "250px";
@@ -51,6 +53,8 @@
                   var element = document.body;
                   element.classList.toggle("dark-mode");
                 }
+            
+            
               </script>
           </div>
         </nav>

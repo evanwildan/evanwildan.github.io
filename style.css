@@ -1,9 +1,15 @@
+html{
+  height:100%;
+}
 body{
   background-color: white;
   color: black;
   margin: 0;
-  padding: 0;
+  padding-bottom: 2rem;
   font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
 }
 
 .dark-mode {
@@ -15,6 +21,8 @@ body{
   max-width: none!important;
   min-width: 320px!important;
 }
+
+
 
 .nav-menu{
   background-color: #333;
@@ -85,7 +93,7 @@ ul.nav-menu_table_horizontal-list {
 
 ul.nav-menu_table_horizontal-list li {
   display: inline-block;
-  overflow: hidden;
+  
 }
 
 ul.nav-menu_table_horizontal-list li a {
@@ -195,7 +203,10 @@ main {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: rgb(255, 72, 0);
-  position: fixed;
+  position: absolute;
+  right:0;
+  left:0;
+  bottom:0;
 }
 
 .footer-menu_table {
