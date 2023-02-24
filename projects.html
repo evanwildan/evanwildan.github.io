@@ -10,22 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="images/ico" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css" />
   </head>
-  <body>
+  <body style="background-color: white; color: black;">
     <div class="website">
         <nav class="nav-menu">
           <div class="nav-menu_all-item">
                     <a href="index.html"><span class="pi pi-home"></span></a>
             <div class="nav-menu_table">
               <ul class="nav-menu_table_horizontal-list">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-              <button class="openbtn" onclick="darkMode()">
-                <i class="pi pi-sun"></i>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+              <button class="icon-btn">
+                <span class="pi pi-sun"></span>
               </button>
-              <button class="openbtn" onclick="openNav()">☰</button>
+              <button class="openbtn2" onclick="openNav()">
+                <span class="pi pi-bars"></span>
+              </button>
               </ul>
 
               <div id="mySidebar" class="sidebar">
@@ -39,34 +40,78 @@
               <script>
                 function openNav() {
                   document.getElementById("mySidebar").style.width = "250px";
-                  document.getElementById("main").style.marginLeft = "250px";
+                  document.getElementById("mySidebar").style.marginLeft = "250px";
                 }
                 
                 function closeNav() {
                   document.getElementById("mySidebar").style.width = "0";
-                  document.getElementById("main").style.marginLeft= "0";
+                  document.getElementById("mySidebar").style.marginLeft= "0";
                 }
+              </script>
+              
+              <script>
+                function setTheme() {
+                  const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+                  const body = document.querySelector('body');
+                  if (isDarkMode) {
+                    body.classList.add('dark');
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                  } else {
+                    body.classList.remove('dark');
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                  }
+                }
+            
+                function toggleTheme() {
+                  const body = document.querySelector('body');
+                  const isDarkMode = body.classList.contains('dark');
+                  body.classList.toggle('dark');
+                  if (isDarkMode) {
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                    localStorage.setItem('isDarkMode', false);
+                  } else {
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    localStorage.setItem('isDarkMode', true);
+                  }
+                }
+            
+                window.addEventListener('load', setTheme);
+                const toggleButton = document.querySelector('.icon-btn');
+                toggleButton.addEventListener('click', toggleTheme);
               </script>
 
               <script>
-                function darkMode() {
-                  var element = document.body;
-                  element.classList.toggle("dark-mode");
+              const iconBtn = document.querySelector('.icon-btn');
+
+              iconBtn.addEventListener('click', () => {
+                const icon = iconBtn.querySelector('.pi');
+                if (icon.classList.contains('pi-sun')) {
+                  icon.classList.remove('pi-sun');
+                  icon.classList.add('pi-moon');
+                } else {
+                  icon.classList.remove('pi-moon');
+                  icon.classList.add('pi-sun');
                 }
-            
-            
+              });
               </script>
+            </div>
           </div>
         </nav>
         <main >
-          <section class="mb-24 prose-h1:my-16" style="opacity: 1; transform: none;">
-            <h1 class="underline leading-relaxed decoration-blue-500 dark:no-underline decoration-8 underline-offset-[10px] undefined"></h1>
-            <div class="flex items-center flex-col md:flex-row ">
-              <div class="rounded-full p-2 mr-8 flex items-center justify-center shadow-lg">
-                <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 250px; height: 250px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"><img alt="Tony David" srcset="/_next/image?url=%2Fhomephoto.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fhomephoto.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2Fhomephoto.webp&amp;w=640&amp;q=75" decoding="async" data-nimg="fixed" class="rounded-full" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span>
+          <section class="section-one">
+            <h1 class="section-one-header"></h1>
+            <div class="section-one-profile-box">
+              <div class="section-one-profile-photo-box">
+                <span class="section-one-profile-photo">
+                  <img alt="Evandro Wildan" src="images/GitHub.svg" >
+                </span>
               </div>
                 
-              <div class="prose-h1:mb-4 prose-h1:mt-2">
+              <div class="section-one-profile-desc">
                 <p>Engineer</p>
                 <h1>Evandro Wildan Aqilah</h1>
                 <p class="xl:w-[40rem]">Evandro is an Electrical Engineering student who still studying at the Sepuluh Nopember Institute of Technology. He is interested in studying in the computer field, especially hardware. Being consistent in work and politeness are his main characteristics. he loves learning programming languages (Python, Javascript, etc). Right now, he is pursuing his career as a FrontEnd Engineer</p>
