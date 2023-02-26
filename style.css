@@ -17,6 +17,7 @@ body{
   position: relative;
   min-height: 100%;
   overflow-y: scroll;
+  transition: background-color 0.5s ease;
 }
 
 body.dark {
@@ -91,14 +92,20 @@ body.dark {
 
 .pi-sun:before {
   content: "\e9c8";
+  color: yellow;
 }
 
 .pi-moon:before {
   content: "\e9c7";
+  color: magenta;
 }
 
 .pi-bars:before {
   content: "\e91d";
+}
+
+.toggle-icon span {
+  transition: color 0.5s ease;
 }
 
 .nav-menu_table {
@@ -128,11 +135,10 @@ ul.nav-menu_table_horizontal-list li a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-ul.nav-menu_table_horizontal-list a:active {
-  background-color: #333;
+ul.nav-menu_table_horizontal-list li a.active {
   color: rgb(255, 72, 0);
-
 }
+
 
 ul.nav-menu_table_horizontal-list .icon-btn {
   background: none;

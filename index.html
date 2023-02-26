@@ -48,57 +48,85 @@
                   document.getElementById("mySidebar").style.marginLeft= "0";
                 }
               </script>
-
+              
               <script>
                 function setTheme() {
-                  const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-                  const body = document.querySelector('body');
-                  if (isDarkMode) {
-                    body.classList.add('dark');
-                    body.style.backgroundColor = 'black';
-                    body.style.color = 'white';
-                  } else {
-                    body.classList.remove('dark');
-                    body.style.backgroundColor = 'white';
-                    body.style.color = 'black';
-                  }
-                }
-
-                function toggleTheme() {
-                  const body = document.querySelector('body');
-                  const isDarkMode = body.classList.contains('dark');
-                  body.classList.toggle('dark');
-                  if (isDarkMode) {
-                    body.style.backgroundColor = 'white';
-                    body.style.color = 'black';
-                    localStorage.setItem('isDarkMode', false);
-                  } else {
-                    body.style.backgroundColor = 'black';
-                    body.style.color = 'white';
-                    localStorage.setItem('isDarkMode', true);
-                  }
-                }
-
-                window.addEventListener('load', setTheme);
-                const toggleButton = document.querySelector('.icon-btn');
-                toggleButton.addEventListener('click', toggleTheme);
-              </script>
-
-              <script>
-              const iconBtn = document.querySelector('.icon-btn');
-
-              iconBtn.addEventListener('click', () => {
-                const icon = iconBtn.querySelector('.pi');
-                if (icon.classList.contains('pi-sun')) {
+                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+                const body = document.querySelector('body');
+                const icon = document.querySelector('.icon-btn .pi');
+                if (isDarkMode) {
+                  body.classList.add('dark');
+                  body.style.backgroundColor = 'black';
+                  body.style.color = 'white';
                   icon.classList.remove('pi-sun');
                   icon.classList.add('pi-moon');
                 } else {
+                  body.classList.remove('dark');
+                  body.style.backgroundColor = 'white';
+                  body.style.color = 'black';
                   icon.classList.remove('pi-moon');
                   icon.classList.add('pi-sun');
                 }
+              }
+
+              function toggleTheme() {
+                const body = document.querySelector('body');
+                const icon = document.querySelector('.icon-btn .pi');
+                const isDarkMode = body.classList.contains('dark');
+                body.classList.toggle('dark');
+                if (isDarkMode) {
+                  body.style.backgroundColor = 'white';
+                  body.style.color = 'black';
+                  icon.classList.remove('pi-moon');
+                  icon.classList.add('pi-sun');
+                  localStorage.setItem('isDarkMode', false);
+                } else {
+                  body.style.backgroundColor = 'black';
+                  body.style.color = 'white';
+                  icon.classList.remove('pi-sun');
+                  icon.classList.add('pi-moon');
+                  localStorage.setItem('isDarkMode', true);
+                }
+              }
+
+              window.addEventListener('load', setTheme);
+
+              const toggleButton = document.querySelector('.icon-btn');
+              toggleButton.addEventListener('click', toggleTheme);
+              </script>
+
+              <script>
+              const icon = document.querySelector('.icon-btn .pi');
+              icon.addEventListener('click', () => {
+                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+                if (isDarkMode) {
+                  icon.classList.remove('pi-moon');
+                  icon.classList.add('pi-sun');
+                } else {
+                  icon.classList.remove('pi-sun');
+                  icon.classList.add('pi-moon');
+                }
               });
               </script>
-              
+
+              <script>
+              var currentUrl = window.location.href;
+              var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
+              for (var i = 0; i < links.length; i++) {
+                if (links[i].href === currentUrl) {
+                  links[i].classList.add('active');
+                  break;
+                }
+              }
+
+              var links = document.getElementsByTagName('a');
+              for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function() {
+                  document.querySelector('a.active').classList.remove('active');
+                  this.classList.add('active');
+                });
+              }
+              </script>
             </div>
           </div>
         </nav>
