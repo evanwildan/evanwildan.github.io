@@ -11,7 +11,7 @@
     <link rel="icon" type="images/ico" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: white; color: black;">
+  <body>
     <div class="website">
         <nav class="nav-menu">
           <div class="nav-menu_all-item">
@@ -56,14 +56,10 @@
                 const icon = document.querySelector('.icon-btn .pi');
                 if (isDarkMode) {
                   body.classList.add('dark');
-                  body.style.backgroundColor = 'black';
-                  body.style.color = 'white';
                   icon.classList.remove('pi-sun');
                   icon.classList.add('pi-moon');
                 } else {
                   body.classList.remove('dark');
-                  body.style.backgroundColor = 'white';
-                  body.style.color = 'black';
                   icon.classList.remove('pi-moon');
                   icon.classList.add('pi-sun');
                 }
@@ -75,16 +71,8 @@
                 const isDarkMode = body.classList.contains('dark');
                 body.classList.toggle('dark');
                 if (isDarkMode) {
-                  body.style.backgroundColor = 'white';
-                  body.style.color = 'black';
-                  icon.classList.remove('pi-moon');
-                  icon.classList.add('pi-sun');
                   localStorage.setItem('isDarkMode', false);
                 } else {
-                  body.style.backgroundColor = 'black';
-                  body.style.color = 'white';
-                  icon.classList.remove('pi-sun');
-                  icon.classList.add('pi-moon');
                   localStorage.setItem('isDarkMode', true);
                 }
               }

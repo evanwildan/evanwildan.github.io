@@ -17,7 +17,8 @@ body{
   position: relative;
   min-height: 100%;
   overflow-y: scroll;
-  transition: background-color 0.5s ease;
+  background-color: white;
+  color: black;
 }
 
 body.dark {
@@ -102,10 +103,6 @@ body.dark {
 
 .pi-bars:before {
   content: "\e91d";
-}
-
-.toggle-icon span {
-  transition: color 0.5s ease;
 }
 
 .nav-menu_table {
