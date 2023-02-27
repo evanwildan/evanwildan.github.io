@@ -87,6 +87,11 @@ body.dark {
   border-color: rgb(255, 72, 0);
 }
 
+.nav-menu_all-item a.active .pi-home:before {
+  color: rgb(255, 72, 0); 
+}
+
+
 .pi-home:before {
   content: "\e925";
 }
@@ -602,9 +607,8 @@ ul.nav-menu_table_horizontal-list li a {
   display:none;
 }
 
-ul.nav-menu_table_horizontal-list a:active {
-  display:none;
-
+.sidebar a.active {
+  color: rgb(255, 72, 0);
 }
 
 .section-one-profile-box {

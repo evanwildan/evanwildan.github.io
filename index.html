@@ -29,23 +29,23 @@
               </button>
               </ul>
 
-              <div id="mySidebar" class="sidebar">
+              <div class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
               </div>
-
+              
               <script>
                 function openNav() {
-                  document.getElementById("mySidebar").style.width = "250px";
-                  document.getElementById("mySidebar").style.marginLeft = "250px";
+                  document.querySelector(".sidebar").style.width = "250px";
+                  document.querySelector(".sidebar").style.marginLeft = "250px";
                 }
-                
+              
                 function closeNav() {
-                  document.getElementById("mySidebar").style.width = "0";
-                  document.getElementById("mySidebar").style.marginLeft= "0";
+                  document.querySelector(".sidebar").style.width = "0";
+                  document.querySelector(".sidebar").style.marginLeft = "0";
                 }
               </script>
               
@@ -98,6 +98,24 @@
               </script>
 
               <script>
+                var currentUrl = window.location.href;
+                var links = document.querySelectorAll('.nav-menu_all-item a');
+                for (var i = 0; i < links.length; i++) {
+                  if (links[i].href === currentUrl) {
+                    links[i].classList.add('active');
+                    break;
+                  }
+                }
+
+                var currentUrl = window.location.href;
+                var links = document.querySelectorAll('.sidebar a');
+                for (var i = 0; i < links.length; i++) {
+                  if (links[i].href === currentUrl) {
+                    links[i].classList.add('active');
+                    break;
+                  }
+                }
+
               var currentUrl = window.location.href;
               var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
               for (var i = 0; i < links.length; i++) {
@@ -107,7 +125,7 @@
                 }
               }
 
-              var links = document.getElementsByTagName('a');
+              var links = document.getElementsByTagName('.nav-menu_all-item a:not(.home-icon)');
               for (var i = 0; i < links.length; i++) {
                 links[i].addEventListener('click', function() {
                   document.querySelector('a.active').classList.remove('active');
