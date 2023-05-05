@@ -37,102 +37,6 @@
                 <li><a href="about.html">About</a></li>
               </div>
               
-              <script>
-                function openNav() {
-                  document.querySelector(".sidebar").style.width = "250px";
-                  document.querySelector(".sidebar").style.marginLeft = "250px";
-                }
-              
-                function closeNav() {
-                  document.querySelector(".sidebar").style.width = "0";
-                  document.querySelector(".sidebar").style.marginLeft = "0";
-                }
-              </script>
-              
-              <script>
-                function setTheme() {
-                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-                const body = document.querySelector('body');
-                const icon = document.querySelector('.icon-btn .pi');
-                if (isDarkMode) {
-                  body.classList.add('dark');
-                  icon.classList.remove('pi-sun');
-                  icon.classList.add('pi-moon');
-                } else {
-                  body.classList.remove('dark');
-                  icon.classList.remove('pi-moon');
-                  icon.classList.add('pi-sun');
-                }
-              }
-
-              function toggleTheme() {
-                const body = document.querySelector('body');
-                const icon = document.querySelector('.icon-btn .pi');
-                const isDarkMode = body.classList.contains('dark');
-                body.classList.toggle('dark');
-                if (isDarkMode) {
-                  localStorage.setItem('isDarkMode', false);
-                } else {
-                  localStorage.setItem('isDarkMode', true);
-                }
-              }
-
-              window.addEventListener('load', setTheme);
-
-              const toggleButton = document.querySelector('.icon-btn');
-              toggleButton.addEventListener('click', toggleTheme);
-              </script>
-
-              <script>
-              const icon = document.querySelector('.icon-btn .pi');
-              icon.addEventListener('click', () => {
-                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-                if (isDarkMode) {
-                  icon.classList.remove('pi-moon');
-                  icon.classList.add('pi-sun');
-                } else {
-                  icon.classList.remove('pi-sun');
-                  icon.classList.add('pi-moon');
-                }
-              });
-              </script>
-
-              <script>
-                var currentUrl = window.location.href;
-                var links = document.querySelectorAll('.nav-menu_all-item a');
-                for (var i = 0; i < links.length; i++) {
-                  if (links[i].href === currentUrl) {
-                    links[i].classList.add('active');
-                    break;
-                  }
-                }
-
-                var currentUrl = window.location.href;
-                var links = document.querySelectorAll('.sidebar a');
-                for (var i = 0; i < links.length; i++) {
-                  if (links[i].href === currentUrl) {
-                    links[i].classList.add('active');
-                    break;
-                  }
-                }
-
-              var currentUrl = window.location.href;
-              var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
-              for (var i = 0; i < links.length; i++) {
-                if (links[i].href === currentUrl) {
-                  links[i].classList.add('active');
-                  break;
-                }
-              }
-
-              var links = document.getElementsByTagName('.nav-menu_all-item a:not(.home-icon)');
-              for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener('click', function() {
-                  document.querySelector('a.active').classList.remove('active');
-                  this.classList.add('active');
-                });
-              }
-              </script>
             </div>
           </div>
         </nav>
@@ -163,13 +67,130 @@
         <footer class="footer-menu">
             <div class="footer-menu_table">
               <ul class="footer-menu_table_horizontal-list">
-                <li><a href="https://github.com/evanwildan" ><img src="images/GitHub.svg" /></a></li>
-                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><img src="images/Mail.svg" /></a></li>
-                <li><a href="https://www.linkedin.com/in/evandro-wildan-521b951b5" ><img src="images/Linkedin.svg" /></a></li>
+                <li><a href="https://github.com/evanwildan" ><span class="pi pi-github"></span></a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><span class="pi pi-envelope"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/evanwildan/" ><span class="pi pi-linkedin"></span></a></li>
               </ul>
             </div>
+            <a href="#" class="back-to-top"><span class="pi pi-arrow-up"></span></a>
         </footer>
       </div>
+
+      <script>
+        function openNav() {
+          document.querySelector(".sidebar").style.width = "250px";
+          document.querySelector(".sidebar").style.marginLeft = "250px";
+        }
+      
+        function closeNav() {
+          document.querySelector(".sidebar").style.width = "0";
+          document.querySelector(".sidebar").style.marginLeft = "0";
+        }
+      </script>
+      
+      <script>
+        function setTheme() {
+        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+        const body = document.querySelector('body');
+        const icon = document.querySelector('.icon-btn .pi');
+        if (isDarkMode) {
+          body.classList.add('dark');
+          icon.classList.remove('pi-sun');
+          icon.classList.add('pi-moon');
+        } else {
+          body.classList.remove('dark');
+          icon.classList.remove('pi-moon');
+          icon.classList.add('pi-sun');
+        }
+      }
+
+      function toggleTheme() {
+        const body = document.querySelector('body');
+        const icon = document.querySelector('.icon-btn .pi');
+        const isDarkMode = body.classList.contains('dark');
+        body.classList.toggle('dark');
+        if (isDarkMode) {
+          localStorage.setItem('isDarkMode', false);
+        } else {
+          localStorage.setItem('isDarkMode', true);
+        }
+      }
+
+      window.addEventListener('load', setTheme);
+
+      const toggleButton = document.querySelector('.icon-btn');
+      toggleButton.addEventListener('click', toggleTheme);
+      </script>
+
+      <script>
+      const icon = document.querySelector('.icon-btn .pi');
+      icon.addEventListener('click', () => {
+        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+        if (isDarkMode) {
+          icon.classList.remove('pi-moon');
+          icon.classList.add('pi-sun');
+        } else {
+          icon.classList.remove('pi-sun');
+          icon.classList.add('pi-moon');
+        }
+      });
+      </script>
+
+      <script>
+        var currentUrl = window.location.href;
+        var links = document.querySelectorAll('.nav-menu_all-item a');
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href === currentUrl) {
+            links[i].classList.add('active');
+            break;
+          }
+        }
+
+        var currentUrl = window.location.href;
+        var links = document.querySelectorAll('.sidebar a');
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href === currentUrl) {
+            links[i].classList.add('active');
+            break;
+          }
+        }
+
+      var currentUrl = window.location.href;
+      var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
+      for (var i = 0; i < links.length; i++) {
+        if (links[i].href === currentUrl) {
+          links[i].classList.add('active');
+          break;
+        }
+      }
+
+      var links = document.getElementsByTagName('.nav-menu_all-item a:not(.home-icon)');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          document.querySelector('a.active').classList.remove('active');
+          this.classList.add('active');
+        });
+      }
+      </script>
+
+      <script>
+        window.addEventListener("scroll", () => {
+          const markers = document.querySelectorAll(".timeline-marker");
+          const sections = document.querySelectorAll(".timeline-panel");
+          let current = "";
+          sections.forEach((section, index) => {
+            const top = section.offsetTop;
+            const height = section.clientHeight;
+            if (window.pageYOffset >= top - height / 2) {
+              current = markers[index];
+            }
+          });
+          markers.forEach(marker => {
+            marker.classList.remove("active");
+          });
+          current.classList.add("active");
+        });
+      </script>
   </body>
 </html>
 

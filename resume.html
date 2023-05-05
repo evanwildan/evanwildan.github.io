@@ -5,149 +5,500 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="icon" type="images/ico" href="/images/favicon.ico">
+    <link rel="icon" type="images/ico" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="website">
+        <div class="banner">
+          <div class="profile-box">
+            <div class="profile-photo-box">
+              <span class="profile-photo">
+                <img alt="Evandro Wildan" src="images/profile.png" >
+              </span>
+            </div>
+            <h1>Evandro Wildan Aqilah</h1>
+            <p>Web Developer | Cloud Computing Cohort</p>
+          </div>
+        </div>
+        
         <nav class="nav-menu">
           <div class="nav-menu_all-item">
-                    <a href="index.html"><span class="pi pi-home"></span></a>
+              <ul class="nav-menu_table_horizontal-list_1">
+                <li>
+                  <a href="index.html">Evandro Wildan Aqilah</a>
+                </li>
+              </ul>
             <div class="nav-menu_table">
-              <ul class="nav-menu_table_horizontal-list">
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+              <ul class="nav-menu_table_horizontal-list_2">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Certificate">Certificate</a></li>
+              </ul>
               <button class="icon-btn">
                 <span class="pi pi-sun"></span>
               </button>
               <button class="openbtn2" onclick="openNav()">
                 <span class="pi pi-bars"></span>
-              </button>
-              </ul>
-
-              <div class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-              </div>
-              
-              <script>
-                function openNav() {
-                  document.querySelector(".sidebar").style.width = "250px";
-                  document.querySelector(".sidebar").style.marginLeft = "250px";
-                }
-              
-                function closeNav() {
-                  document.querySelector(".sidebar").style.width = "0";
-                  document.querySelector(".sidebar").style.marginLeft = "0";
-                }
-              </script>
-              
-              <script>
-                function setTheme() {
-                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-                const body = document.querySelector('body');
-                const icon = document.querySelector('.icon-btn .pi');
-                if (isDarkMode) {
-                  body.classList.add('dark');
-                  icon.classList.remove('pi-sun');
-                  icon.classList.add('pi-moon');
-                } else {
-                  body.classList.remove('dark');
-                  icon.classList.remove('pi-moon');
-                  icon.classList.add('pi-sun');
-                }
-              }
-
-              function toggleTheme() {
-                const body = document.querySelector('body');
-                const icon = document.querySelector('.icon-btn .pi');
-                const isDarkMode = body.classList.contains('dark');
-                body.classList.toggle('dark');
-                if (isDarkMode) {
-                  localStorage.setItem('isDarkMode', false);
-                } else {
-                  localStorage.setItem('isDarkMode', true);
-                }
-              }
-
-              window.addEventListener('load', setTheme);
-
-              const toggleButton = document.querySelector('.icon-btn');
-              toggleButton.addEventListener('click', toggleTheme);
-              </script>
-
-              <script>
-              const icon = document.querySelector('.icon-btn .pi');
-              icon.addEventListener('click', () => {
-                const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-                if (isDarkMode) {
-                  icon.classList.remove('pi-moon');
-                  icon.classList.add('pi-sun');
-                } else {
-                  icon.classList.remove('pi-sun');
-                  icon.classList.add('pi-moon');
-                }
-              });
-              </script>
-
-              <script>
-                var currentUrl = window.location.href;
-                var links = document.querySelectorAll('.nav-menu_all-item a');
-                for (var i = 0; i < links.length; i++) {
-                  if (links[i].href === currentUrl) {
-                    links[i].classList.add('active');
-                    break;
-                  }
-                }
-
-                var currentUrl = window.location.href;
-                var links = document.querySelectorAll('.sidebar a');
-                for (var i = 0; i < links.length; i++) {
-                  if (links[i].href === currentUrl) {
-                    links[i].classList.add('active');
-                    break;
-                  }
-                }
-
-              var currentUrl = window.location.href;
-              var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
-              for (var i = 0; i < links.length; i++) {
-                if (links[i].href === currentUrl) {
-                  links[i].classList.add('active');
-                  break;
-                }
-              }
-
-              var links = document.getElementsByTagName('.nav-menu_all-item a:not(.home-icon)');
-              for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener('click', function() {
-                  document.querySelector('a.active').classList.remove('active');
-                  this.classList.add('active');
-                });
-              }
-              </script>
-            </div>
+              </button>    
+            </div>         
           </div>
+          
         </nav>
         <main >
+          <div class="section-table">
+            <section class="section-box">
+              <h1 id="About">About</h1>
+                <div class="timeline-card">
+                  <div class="timeline-card-body">
+                    <div class="timeline-card-title">
+                      <p>Hey there my name is Evandro. I am an Electrical Engineering student who is still studying at the Sepuluh Nopember Institute of Technology. I am interested in Web Development and Cloud Computing. Being consistent in work and politeness are my main characteristics. I love learning programming languages (Python, Javascript, etc). Right now, I am pursuing a career in Web Development</p>
+                    </div>
+                  </div>
+                </div> 
+            </section>
+
+            <section class="section-box">
+              <h1 id="Education">Education</h1>
+                <div class="timeline-container">
+                  <div class="timeline-event">
+                    <div class="timeline-event-opposite"></div>
+                    <div class="timeline-event-separator">
+                      <div class="timeline-separator-marker"></div>
+                      <div class="timeline-separator-connector"></div>
+                    </div>
+                    <div class="timeline-event-content">
+                      <div class="timeline-card">
+                        <div class="timeline-card-body">
+                          <div class="timeline-card-title">
+                            <h2>SMAN 70 Jakarta</h2>
+                          </div>
+                          <div class="timeline-card-subtitle">
+                            <h3>2016 - 2019</h3>
+                          </div>
+                          <div class="timeline-card-content">
+                            <p>Here I focus on science. When I was in high school, I was active in organization spesifically the robotics club. I also won a perfect score on National Exam in mathematics subject</p>              
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+
+                  <div class="timeline-event">
+                    <div class="timeline-event-opposite"></div>
+                    <div class="timeline-event-separator">
+                      <div class="timeline-separator-marker"></div>                     
+                    </div>
+                    <div class="timeline-event-content">
+                      <div class="timeline-card">
+                        <div class="timeline-card-body">
+                          <div class="timeline-card-title">
+                            <h2>Institut Teknologi Sepuluh Nopember (ITS) Surabaya</h2>
+                          </div>
+                          <div class="timeline-card-subtitle">
+                            <h3>2019 - 2023</h3>
+                          </div>
+                          <div class="timeline-card-content">
+                            <p>Here I majored in electrical engineering with a focus on the topic of telecommunications. I participated as a Liaison Officer (LO) at Electra 9 in 2019. When I was in college, I was also active in the world of frontend engineering and liked to experiment with new projects</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="section-box">
+              <h1 id="Experience">Experience</h1>
+                <div class="timeline-container">
+                  <div class="timeline-event">
+                    <div class="timeline-event-opposite"></div>
+                    <div class="timeline-event-separator">
+                      <div class="timeline-separator-marker"></div>
+                      <div class="timeline-separator-connector"></div>
+                    </div>
+                    <div class="timeline-event-content">
+                      <div class="timeline-card">
+                        <div class="timeline-card-body">
+                          <div class="timeline-card-title">
+                            <h2>Internship at PT. Adhi Karya (Departemen Perkeretaapian)</h2>
+                          </div>
+                          <div class="timeline-card-subtitle">
+                            <h3>January 2022 - February 2022</h3>
+                          </div>
+                          <div class="timeline-card-content">
+                            <p>I was assigned to document the Installation and Integration of the Telecommunication System on Light Rapid Transit (LRT) JABODEBEK</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+
+                  <div class="timeline-event">
+                    <div class="timeline-event-opposite"></div>
+                    <div class="timeline-event-separator">
+                      <div class="timeline-separator-marker"></div>                     
+                    </div>
+                    <div class="timeline-event-content">
+                      <div class="timeline-card">
+                        <div class="timeline-card-body">
+                          <div class="timeline-card-title">
+                            <h2>Cloud Computing Path Cohort at Bangkit Academy</h2>
+                          </div>
+                          <div class="timeline-card-subtitle">
+                            <h3>February 2023 - July 2023</h3>
+                          </div>
+                          <div class="timeline-card-content">
+                            <p>Independent study provided by Google, Tokopedia, Gojek, & Traveloka. Bangkit curriculum offers 3 interdisciplinary learning paths - Machine Learning, Mobile Development, and Cloud Computing. I took the Cloud Computing path here and learn about building the frontend and backend of a web and also setting up server using Google Cloud Platform</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="section-box">
+              <h1 id="Certificate">Certificate</h1>
+              <div class="button-container">
+                <div class="prev-button"><span class="pi pi-arrow-circle-left"></span></div>
+                <div class="next-button"><span class="pi pi-arrow-circle-right"></span></div>
+              </div>
+              <div class="certificate-container">
+              <div class="certificate-event">
+                <div class="certificate-opposite">
+                  <div class="timeline-card">
+                    <h3>Cloud Computing</h3>
+                    <div class="certificate-photo-box">
+                      <span class="certificate-photo">
+                        <img alt="Evandro Wildan" src="images/cloud-computing.png" >
+                      </span>
+                    </div>
+                  </div>
+
+                  </div>
+                 
+                </div>
+                <div class="certificate-content-1">
+                  <a href="https://www.dicoding.com/certificates/0LZ0GLVW0X65" class="certificate-card">
+                    <h3>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</h3>
+                    <p>Dicoding Indonesia</p>
+                    <p>January 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3269018?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="certificate-card">
+                    <h3>Create and Manage Cloud Resources</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3270885?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Google Cloud Computing Foundations: Cloud Computing Fundamentals</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3276861?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3271445?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Google Cloud Computing Foundations: Infrastructure in Google Cloud</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+                  
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3275918?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Google Cloud Computing Foundations: Networking & Security in Google Cloud</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3277579?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Perform Foundational Data, ML, and AI Tasks in Google Cloud</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3270871?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Perform Foundational Infrastructure Tasks in Google Cloud</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+
+                  <a href="https://www.cloudskillsboost.google/public_profiles/bdbfa4b3-6c46-481b-8785-4f2f73a4d06d/badges/3381255?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"  class="certificate-card">
+                    <h3>Preparing for Your Associate Cloud Engineer Journey</h3>
+                    <p>Google Cloud Skills Boost</p>
+                    <p>March 2023</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="certificate-container">
+                <div class="certificate-event">
+                  <div class="certificate-opposite">
+                    <div class="timeline-card">
+                      <h3>Back End Programming</h3>
+                      <div class="certificate-photo-box">
+                        <span class="certificate-photo">
+                          <img alt="back-end" src="images/back-end.png" >
+                        </span>
+                      </div>
+                    </div>
+                    </div>        
+                  </div>
+                  <div class="certificate-content-2">
+                    <a href="https://www.dicoding.com/certificates/72ZD9L1Q9PYW" class="certificate-card">
+                      <h3>Belajar Dasar Pemrograman JavaScript</h3>
+                      <p>Dicoding Indonesia</p>
+                      <p>March 2023</p>
+                    </a>
+  
+                    <a href="https://www.dicoding.com/certificates/JLX1LO4O6X72" class="certificate-card">
+                      <h3>Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud</h3>
+                      <p>Dicoding Indonesia</p>
+                      <p>March 2023</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="certificate-container">
+                  <div class="certificate-event">
+                    <div class="certificate-opposite">
+                      <div class="timeline-card">
+                        <h3>Front End Programming</h3>
+                        <div class="certificate-photo-box">
+                          <span class="certificate-photo">
+                            <img alt="front-end" src="images/front-end.png" >
+                          </span>
+                        </div>
+                      </div>
+                      </div>        
+                    </div>
+                    <div class="certificate-content-3">
+                      <a href="https://www.dicoding.com/certificates/N9ZO4KOYRZG5" class="certificate-card">
+                        <h3>Belajar Dasar Pemrograman Web</h3>
+                        <p>Dicoding Indonesia</p>
+                        <p>March 2023</p>
+                      </a>
+
+                    </div>
+                  </div>
+            </section>
+          </div>          
+
         </main>
         <footer class="footer-menu">
             <div class="footer-menu_table">
               <ul class="footer-menu_table_horizontal-list">
-                <li><a href="https://github.com/evanwildan" ><img src="images/GitHub.svg" /></a></li>
-                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><img src="images/Mail.svg" /></a></li>
-                <li><a href="https://www.linkedin.com/in/evandro-wildan-521b951b5" ><img src="images/Linkedin.svg" /></a></li>
+                <li><a href="https://github.com/evanwildan" ><span class="pi pi-github"></span></a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><span class="pi pi-envelope"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/evanwildan/" ><span class="pi pi-linkedin"></span></a></li>
               </ul>
             </div>
+            <a href="#" class="back-to-top"><span class="pi pi-arrow-circle-up"></span></a>
         </footer>
       </div>
+
+      <div class="sidebar">
+        <div class="sidebar-box">
+          <div class="sidebar-header">
+            <button class="closebtn" onclick="closeNav()"><span class="pi pi-times-circle"></span></button>
+            <ul class="sidebar-header-items">
+              <li><a href="https://github.com/evanwildan" ><span class="pi pi-github"></span></a></li>
+              <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=evandrowildan2@gmail.com&su=&body=" ><span class="pi pi-envelope"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/evanwildan/" ><span class="pi pi-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="sidebar-content">
+            <ul class="sidebar-content-items">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Education">Education</a></li>
+              <li><a href="#Experience">Experience</a></li>
+              <li><a href="#Certificate">Certificate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      const sidebar = document.querySelector('.sidebar');
+      const sidebarItems = document.querySelectorAll('.sidebar .sidebar-items');
+
+      function openNav() {
+        sidebar.style.width = '250px';
+        sidebarItems.forEach((item, index) => {
+          item.classList.remove('show');
+          item.style.transitionDelay = '0s'; // clear the transition delay
+          setTimeout(() => {
+            item.classList.add('show');
+          }, 500 + (index * 100));
+        });
+        document.addEventListener("click", closeNavOnClickOutside);
+      }
+
+      function closeNav() {
+        sidebar.style.width = '0';
+        sidebarItems.forEach(item => {
+          item.classList.remove('show');
+        });
+        localStorage.setItem('sidebarOpen', false);
+        document.removeEventListener('click', closeNavOnClickOutside);
+      }
+
+      function closeNavOnClickOutside(event) {
+        if (!event.target.closest('.sidebar') && !event.target.closest('.openbtn2')) {
+          closeNav();
+        }
+      }
+    </script>
+      
+    <script>
+      function setTheme() {
+        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+        const body = document.querySelector('body');
+        const icon = document.querySelector('.icon-btn .pi');
+
+        if (isDarkMode) {
+          body.classList.add('dark');
+          icon.classList.remove('pi-sun');
+          icon.classList.add('pi-moon');
+        } else {
+          body.classList.remove('dark');
+          icon.classList.remove('pi-moon');
+          icon.classList.add('pi-sun');
+        }
+      }
+
+      function toggleTheme() {
+        const body = document.querySelector('body');
+        const icon = document.querySelector('.icon-btn .pi');
+        const isDarkMode = body.classList.contains('dark');
+        body.classList.toggle('dark');
+
+        if (isDarkMode) {
+          localStorage.setItem('isDarkMode', false);
+          icon.classList.remove('pi-moon');
+          icon.classList.add('pi-sun');
+        } else {
+          localStorage.setItem('isDarkMode', true);
+          icon.classList.remove('pi-sun');
+          icon.classList.add('pi-moon');
+        }
+      }
+
+      window.addEventListener('load', setTheme);
+      const toggleButton = document.querySelector('.icon-btn');
+      toggleButton.addEventListener('click', toggleTheme);
+    </script>
+
+    <script>
+      function updateActiveLink() {
+        var currentUrl = window.location.href;
+        var links = document.querySelectorAll('.nav-menu_all-item a');
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href === currentUrl) {
+            links[i].classList.add('active');
+          } else {
+            links[i].classList.remove('active');
+          }
+        }
+
+        var links = document.querySelectorAll('.sidebar a');
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href === currentUrl) {
+            links[i].classList.add('active');
+          } else {
+            links[i].classList.remove('active');
+          }
+        }
+
+        var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href === currentUrl) {
+            links[i].classList.add('active');
+          } else {
+            links[i].classList.remove('active');
+          }
+        }
+      }
+
+      window.addEventListener('load', updateActiveLink);
+      window.addEventListener('hashchange', updateActiveLink);
+    </script>
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.back-to-top').style.display = "block";
+        } else {
+          document.querySelector('.back-to-top').style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      const certificates = document.querySelectorAll('.certificate-container');
+      const prevButton = document.querySelector('.prev-button');
+      const nextButton = document.querySelector('.next-button');
+
+      let currentIndex = localStorage.getItem('currentIndex') ? parseInt(localStorage.getItem('currentIndex')) : 0;
+
+      certificates.forEach((certificate, index) => {
+      if (index !== currentIndex) {
+          certificate.style.display = 'none';
+      }
+      });
+
+      if (currentIndex === 0) {
+      prevButton.disabled = true;
+      prevButton.style.visibility = 'hidden';
+      }
+
+      if (currentIndex === certificates.length - 1) {
+      nextButton.disabled = true;
+      nextButton.style.visibility = 'hidden';
+      }
+
+      prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          certificates[currentIndex].style.display = 'none';
+          currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+          certificates[currentIndex].style.display = 'flex';
+          nextButton.disabled = false;
+          nextButton.style.visibility = 'visible';
+
+          if (currentIndex === 0) {
+            prevButton.disabled = true;
+            prevButton.style.visibility = 'hidden';
+          }
+            
+          localStorage.setItem('currentIndex', currentIndex);
+        }
+      });
+
+      nextButton.addEventListener('click', () => {
+      if (currentIndex < certificates.length - 1) {
+        certificates[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % certificates.length;
+        certificates[currentIndex].style.display = 'flex';
+        prevButton.disabled = false;
+        prevButton.style.visibility = 'visible';
+
+        if (currentIndex === certificates.length - 1) {
+        nextButton.disabled = true;
+        nextButton.style.visibility = 'hidden';
+        }
+
+        localStorage.setItem('currentIndex', currentIndex);
+      }
+      });
+    </script>
   </body>
 </html>
-
