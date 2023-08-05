@@ -372,6 +372,11 @@ main {
   padding-top: 4rem;
 }
 
+.header{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .section-table{
   display: flex;
   flex-direction: column;
@@ -379,12 +384,18 @@ main {
   min-height: 100vh;
 }
 
-.section-table h1 {
+h1 {
   margin-bottom: 4rem;
   text-decoration-color: #00C9A7;
   text-decoration-line: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 8px;
+}
+
+h1#page-title{
+  margin-bottom: 0;
+  text-decoration-color: transparent;
+  text-align: center;
 }
 
 .timeline-container {
@@ -640,7 +651,7 @@ body.dark .certificate-content-1 a:hover, body.dark .certificate-content-2 a:hov
 
 .profile-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -660,6 +671,7 @@ body.dark .certificate-content-1 a:hover, body.dark .certificate-content-2 a:hov
   border-style: solid;
   border-color: #00C9A7;
   border-radius: 9999px;
+  margin-right: 2rem;
 }
 
 .profile-photo {

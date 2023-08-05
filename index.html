@@ -13,55 +13,157 @@
   </head>
   <body>
     <div class="website">
+
         <nav class="nav-menu">
           <div class="nav-menu_all-item">
-                    <a href="index.html"><span class="pi pi-home"></span></a>
+              <ul class="nav-menu_table_horizontal-list_1">
+                <li>
+                  <a href="index.html">Evandro Wildan Aqilah</a>
+                </li>
+              </ul>
             <div class="nav-menu_table">
-              <ul class="nav-menu_table_horizontal-list">
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+              <ul class="nav-menu_table_horizontal-list_2">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
               <button class="icon-btn">
                 <span class="pi pi-sun"></span>
               </button>
               <button class="openbtn2" onclick="openNav()">
                 <span class="pi pi-bars"></span>
-              </button>
-              </ul>
-
-              <div class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-              </div>
-              
+              </button>    
             </div>
+            <div class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+            </div>         
           </div>
         </nav>
-        <main >
-          <section class="section-one">
-            <h1 class="section-one-header"></h1>
-            <div class="section-one-profile-box">
-              <div class="section-one-profile-photo-box">
-                <span class="section-one-profile-photo">
-                  <img alt="Evandro Wildan" src="images/GitHub.svg" >
+
+        <main>
+          <section class="section-box">
+            <h1 class="header"></h1>
+            <div class="profile-box">
+              <div class="profile-photo-box">
+                <span class="profile-photo">
+                  <img alt="Evandro Wildan" src="images/profile.jpg" >
                 </span>
               </div>
                 
-              <div class="section-one-profile-desc">
+              <div class="profile-desc">
                 <p>Engineer</p>
                 <h1>Evandro Wildan Aqilah</h1>
                 <p class="xl:w-[40rem]">Evandro is an Electrical Engineering student who still studying at the Sepuluh Nopember Institute of Technology. He is interested in studying in the computer field, especially hardware. Being consistent in work and politeness are his main characteristics. he loves learning programming languages (Python, Javascript, etc). Right now, he is pursuing his career as a FrontEnd Engineer</p>
                 <button class="p-button p-component prose dark:prose-invert p-button-outlined p-button-info    dark:!text-white  border-2 dark:!bg-transparent hover:dark:!bg-black/60 hover:dark:!border-white hover:dark:!text-white">
-                  <span class="p-button-label p-c">Know me more!</span>
+                  <a href="about.html">Know me more!</a>
                 </button>
               </div>
             </div>
           </section>
 
-          <section class="mb-24 prose-h1:my-16" style="opacity: 1; transform: none;"><h1 class="underline leading-relaxed decoration-blue-500 dark:no-underline decoration-8 underline-offset-[10px] undefined">What I Do</h1><div class="flex flex-wrap sm:justify-center gap-x-16 gap-y-8"><div class="flex flex-col sm:flex-row prose-h3:mt-0"><div class="text-6xl mr-4"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 0 0 308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 0 0-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"></path></svg></div><div><h3>Frontend Engineer</h3><p class="sm:w-[25rem]">I am a Frontend Engineer, I have experience in building web applications using React, Redux, NextJS, TailwindCSS, TypeScript, NodeJS, ExpressJS, MongoDB, GraphQL, Apollo, and more.</p></div></div><div class="flex flex-col sm:flex-row prose-h3:mt-0"><div class="text-6xl mr-4"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 33c-20.835 0-39 20.24-39 47s18.165 47 39 47 39-20.24 39-47-18.165-47-39-47zM110.258 54.934l-16.99 8.496c14.917 22.147 32.213 47.013 49.76 68.947 19.707 24.634 39.95 45.048 52.997 51.572l4.975 2.488v39.478c27.13 3.608 46.516 4.982 67.875 4.09-.66-.49-1.316-.98-1.95-1.48-4.915-3.88-9.18-8.206-12.5-12.856-5.87-.587-10.577-4.374-13.392-8.65-3.063-4.65-4.57-10.242-4.57-16.262s1.507-11.612 4.57-16.264c3.064-4.65 8.364-8.736 14.967-8.736s11.903 4.085 14.967 8.736c3.063 4.652 4.57 10.244 4.57 16.264s-1.507 11.612-4.57 16.263c-.06.094-.13.185-.192.277 1.92 2.358 4.335 4.758 7.303 7.1 6.283 4.962 14.722 9.46 24.75 12.66 2.65-.324 5.366-.67 8.172-1.04v-39.58l4.975-2.488c13.048-6.525 33.29-26.94 52.998-51.573 17.546-21.934 34.842-46.8 49.76-68.947l-16.99-8.496C355.066 101.422 307.792 145 256 145c-51.792 0-99.067-43.578-145.742-90.066zm29.094 179.93l12.152 60.763c101.057 9.362 107.935 9.362 208.992 0l12.147-60.734c-110.08 17.448-123.22 17.163-233.29-.03zm39.244 81.335l13.35 106.8h128.11l13.348-106.8c-67.76 6.032-87.047 6.032-154.808 0zM137 441v20h238v-20H137zM16 478v18h480v-18H16z"></path></svg></div><div><h3>Public Relation</h3><p class="sm:w-[25rem]">Though i am a frontend engineer, i also have experience in public relations. I usually contributing to my team's social media, and also i am a public relations officer in some of university organizations.</p></div></div></div></section>
+          <section class="section-box">
+            <h1 id="Experience">What I Do</h1>
+              <div class="timeline-container">
+                <div class="timeline-event">
+                  <div class="timeline-event-opposite"></div>
+                  <div class="timeline-event-separator">
+                    <div class="timeline-separator-marker"></div>
+                    <div class="timeline-separator-connector"></div>
+                  </div>
+                  <div class="timeline-event-content">
+                    <div class="timeline-card">
+                      <div class="timeline-card-body">
+                        <div class="timeline-card-title">
+                          <h2>Internship at PT. Adhi Karya (Departemen Perkeretaapian)</h2>
+                        </div>
+                        <div class="timeline-card-subtitle">
+                          <h3>January 2022 - February 2022</h3>
+                        </div>
+                        <div class="timeline-card-content">
+                          <p>I was assigned to document the Installation and Integration of the Telecommunication System on Light Rapid Transit (LRT) JABODEBEK</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="timeline-event">
+                  <div class="timeline-event-opposite"></div>
+                  <div class="timeline-event-separator">
+                    <div class="timeline-separator-marker"></div>                     
+                  </div>
+                  <div class="timeline-event-content">
+                    <div class="timeline-card">
+                      <div class="timeline-card-body">
+                        <div class="timeline-card-title">
+                          <h2>Cloud Computing Path Cohort at Bangkit Academy</h2>
+                        </div>
+                        <div class="timeline-card-subtitle">
+                          <h3>February 2023 - July 2023</h3>
+                        </div>
+                        <div class="timeline-card-content">
+                          <p>Independent study provided by Google, Tokopedia, Gojek, & Traveloka. Bangkit curriculum offers 3 interdisciplinary learning paths - Machine Learning, Mobile Development, and Cloud Computing. I took the Cloud Computing path here and learn about building the frontend and backend of a web and also setting up server using Google Cloud Platform</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section class="section-box">
+            <h1 id="Experience">Projects</h1>
+              <div class="timeline-container">
+                <div class="timeline-event">
+                  <div class="timeline-event-opposite"></div>
+                  <div class="timeline-event-separator">
+                    <div class="timeline-separator-marker"></div>
+                    <div class="timeline-separator-connector"></div>
+                  </div>
+                  <div class="timeline-event-content">
+                    <div class="timeline-card">
+                      <div class="timeline-card-body">
+                        <div class="timeline-card-title">
+                          <h2>Internship at PT. Adhi Karya (Departemen Perkeretaapian)</h2>
+                        </div>
+                        <div class="timeline-card-subtitle">
+                          <h3>January 2022 - February 2022</h3>
+                        </div>
+                        <div class="timeline-card-content">
+                          <p>I was assigned to document the Installation and Integration of the Telecommunication System on Light Rapid Transit (LRT) JABODEBEK</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="timeline-event">
+                  <div class="timeline-event-opposite"></div>
+                  <div class="timeline-event-separator">
+                    <div class="timeline-separator-marker"></div>                     
+                  </div>
+                  <div class="timeline-event-content">
+                    <div class="timeline-card">
+                      <div class="timeline-card-body">
+                        <div class="timeline-card-title">
+                          <h2>Cloud Computing Path Cohort at Bangkit Academy</h2>
+                        </div>
+                        <div class="timeline-card-subtitle">
+                          <h3>February 2023 - July 2023</h3>
+                        </div>
+                        <div class="timeline-card-content">
+                          <p>Independent study provided by Google, Tokopedia, Gojek, & Traveloka. Bangkit curriculum offers 3 interdisciplinary learning paths - Machine Learning, Mobile Development, and Cloud Computing. I took the Cloud Computing path here and learn about building the frontend and backend of a web and also setting up server using Google Cloud Platform</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+          </section>
 
         </main>
         <footer class="footer-menu">
@@ -76,121 +178,11 @@
         </footer>
       </div>
 
-      <script>
-        function openNav() {
-          document.querySelector(".sidebar").style.width = "250px";
-          document.querySelector(".sidebar").style.marginLeft = "250px";
-        }
-      
-        function closeNav() {
-          document.querySelector(".sidebar").style.width = "0";
-          document.querySelector(".sidebar").style.marginLeft = "0";
-        }
-      </script>
-      
-      <script>
-        function setTheme() {
-        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-        const body = document.querySelector('body');
-        const icon = document.querySelector('.icon-btn .pi');
-        if (isDarkMode) {
-          body.classList.add('dark');
-          icon.classList.remove('pi-sun');
-          icon.classList.add('pi-moon');
-        } else {
-          body.classList.remove('dark');
-          icon.classList.remove('pi-moon');
-          icon.classList.add('pi-sun');
-        }
-      }
-
-      function toggleTheme() {
-        const body = document.querySelector('body');
-        const icon = document.querySelector('.icon-btn .pi');
-        const isDarkMode = body.classList.contains('dark');
-        body.classList.toggle('dark');
-        if (isDarkMode) {
-          localStorage.setItem('isDarkMode', false);
-        } else {
-          localStorage.setItem('isDarkMode', true);
-        }
-      }
-
-      window.addEventListener('load', setTheme);
-
-      const toggleButton = document.querySelector('.icon-btn');
-      toggleButton.addEventListener('click', toggleTheme);
-      </script>
-
-      <script>
-      const icon = document.querySelector('.icon-btn .pi');
-      icon.addEventListener('click', () => {
-        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-        if (isDarkMode) {
-          icon.classList.remove('pi-moon');
-          icon.classList.add('pi-sun');
-        } else {
-          icon.classList.remove('pi-sun');
-          icon.classList.add('pi-moon');
-        }
-      });
-      </script>
-
-      <script>
-        var currentUrl = window.location.href;
-        var links = document.querySelectorAll('.nav-menu_all-item a');
-        for (var i = 0; i < links.length; i++) {
-          if (links[i].href === currentUrl) {
-            links[i].classList.add('active');
-            break;
-          }
-        }
-
-        var currentUrl = window.location.href;
-        var links = document.querySelectorAll('.sidebar a');
-        for (var i = 0; i < links.length; i++) {
-          if (links[i].href === currentUrl) {
-            links[i].classList.add('active');
-            break;
-          }
-        }
-
-      var currentUrl = window.location.href;
-      var links = document.querySelectorAll('.nav-menu_table_horizontal-list li a');
-      for (var i = 0; i < links.length; i++) {
-        if (links[i].href === currentUrl) {
-          links[i].classList.add('active');
-          break;
-        }
-      }
-
-      var links = document.getElementsByTagName('.nav-menu_all-item a:not(.home-icon)');
-      for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function() {
-          document.querySelector('a.active').classList.remove('active');
-          this.classList.add('active');
-        });
-      }
-      </script>
-
-      <script>
-        window.addEventListener("scroll", () => {
-          const markers = document.querySelectorAll(".timeline-marker");
-          const sections = document.querySelectorAll(".timeline-panel");
-          let current = "";
-          sections.forEach((section, index) => {
-            const top = section.offsetTop;
-            const height = section.clientHeight;
-            if (window.pageYOffset >= top - height / 2) {
-              current = markers[index];
-            }
-          });
-          markers.forEach(marker => {
-            marker.classList.remove("active");
-          });
-          current.classList.add("active");
-        });
-      </script>
+    <script src="sidebar.js"></script>
+    <script src="theme.js"></script>
+    <script src="active-link.js"></script>
+    <script src="back-to-top.js"></script>
+    <script src="prev-next-button.js"></script>
   </body>
 </html>
 
